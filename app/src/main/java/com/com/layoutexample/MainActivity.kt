@@ -14,5 +14,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this,LinearLayout::class.java)
             startActivity(intent)
         }
+
+        linearLayoutButton1.setOnClickListener{
+            val intent = Intent(this,LinearLayout1::class.java)
+            startActivity(intent)
+        }
     }
 }
