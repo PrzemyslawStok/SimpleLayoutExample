@@ -11,6 +11,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         linearLayoutButton.setOnClickListener{
+            val intent = Intent(this,LinearLayout::class.java)
+            startActivity(intent)
         }
     }
 }
