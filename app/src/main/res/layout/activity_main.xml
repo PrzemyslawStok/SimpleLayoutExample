@@ -10,7 +10,6 @@
         android:id="@+id/linearLayoutButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
         android:text="Linear Layout"
         app:layout_constraintBottom_toTopOf="@+id/linearLayoutButton1"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,8 +20,8 @@
         android:id="@+id/linearLayoutButton1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
         android:text="Linear Layout 1"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayoutButton2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayoutButton" />
@@ -35,6 +34,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayoutButton1"
-        app:layout_constraintVertical_bias="0.060000002" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutButton1" />
 </androidx.constraintlayout.widget.ConstraintLayout>
