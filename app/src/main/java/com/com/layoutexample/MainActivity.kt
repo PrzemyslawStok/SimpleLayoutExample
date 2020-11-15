@@ -19,6 +19,11 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this,LinearLayout1::class.java)
             startActivity(intent)
         }
-        
+
+        linearLayoutButton2.setOnClickListener{
+            val intent = Intent(this,LinearLayout2::class.java)
+            startActivity(intent)
+        }
+
     }
 }
