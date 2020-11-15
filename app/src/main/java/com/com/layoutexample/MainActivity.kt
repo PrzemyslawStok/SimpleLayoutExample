@@ -25,5 +25,15 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        relativeLayout1.setOnClickListener{
+            val intent = Intent(this,RelativeLayout::class.java)
+            startActivity(intent)
+        }
+
+        relativeLayout2.setOnClickListener{
+            val intent = Intent(this,RelativeLayout1::class.java)
+            startActivity(intent)
+        }
+
     }
 }
