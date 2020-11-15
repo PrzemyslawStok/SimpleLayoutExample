@@ -19,5 +19,6 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this,LinearLayout1::class.java)
             startActivity(intent)
         }
+        
     }
 }
