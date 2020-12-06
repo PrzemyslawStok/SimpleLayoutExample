@@ -18,7 +18,7 @@ class LinearLayout : AppCompatActivity() {
         }
 
         openSimpleDialogButton2.setOnClickListener{
-            dialog2()
+            dialog3()
         }
 
     }

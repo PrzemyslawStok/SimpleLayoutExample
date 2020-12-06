@@ -20,6 +20,12 @@ class CustomDialog : DialogFragment(){
             Toast.makeText(activity!!,"Kliknięto klawisz zamknij", Toast.LENGTH_SHORT).show()
         })
 
+        activity?.let {
+            val view = it.layoutInflater.inflate(R.layout.custom_dialog,null)
+
+            builder.setView(view)
+        }
+
         val dialog = builder.create()
 
         return dialog
