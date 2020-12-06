@@ -18,7 +18,7 @@ class LinearLayout : AppCompatActivity() {
         }
 
         openSimpleDialogButton2.setOnClickListener{
-            dialog3()
+            dialog2()
         }
 
     }
@@ -46,7 +46,7 @@ class LinearLayout : AppCompatActivity() {
         //Do dokończenia
         val builder = AlertDialog.Builder(this)
         builder.setTitle("Wybierz")
-        builder.setMessage("Okno z wyborem listy")
+        //builder.setMessage("Okno z wyborem listy")
 
         val checkedArray = BooleanArray(2){false}
         val itemArray = arrayOf("Element1","Element2")
