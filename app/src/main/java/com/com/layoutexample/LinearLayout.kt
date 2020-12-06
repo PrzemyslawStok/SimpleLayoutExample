@@ -43,12 +43,15 @@ class LinearLayout : AppCompatActivity() {
     }
 
     fun dialog2(){
+        //Do dokończenia
         val builder = AlertDialog.Builder(this)
         builder.setTitle("Wybierz")
         builder.setMessage("Okno z wyborem listy")
 
-        builder.setMultiChoiceItems(R.array.listItems,null,
-            DialogInterface.OnMultiChoiceClickListener{
+        val checkedArray = BooleanArray(2){false}
+        val itemArray = arrayOf("Element1","Element2")
+
+        builder.setMultiChoiceItems(itemArray,checkedArray, {
                 dialog,id,clicked->
             })
 
