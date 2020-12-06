@@ -47,6 +47,8 @@ class LinearLayout : AppCompatActivity() {
         builder.setTitle("Wybierz")
         builder.setMessage("Okno z wyborem listy")
 
+
+
         builder.create();
         builder.show();
 
