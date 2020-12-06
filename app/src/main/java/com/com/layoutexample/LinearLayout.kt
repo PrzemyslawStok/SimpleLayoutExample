@@ -13,23 +13,34 @@ class LinearLayout : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_linear_layout)
 
-        openSimpleDialogButton.setOnClickListener{
-            val builder = AlertDialog.Builder(this)
-            builder.setTitle("Nazwa okna")
-            builder.setMessage("Opis okna")
-
-            builder.setPositiveButton("Ok") {
-                    dialog,id->Toast.makeText(this,"Kliknięto klawisz OK",Toast.LENGTH_SHORT).show()
-            }
-
-            builder.setNegativeButton("Zamknij",{dialog,id->
-                Toast.makeText(this,"Kliknięto klawisz zamknij",Toast.LENGTH_SHORT).show()})
-
-            val dialog = builder.create()
-
-            //dialog.show()
+        openSimpleDialogButton1.setOnClickListener{
+            dialog1()
         }
 
+        openSimpleDialogButton2.setOnClickListener{
+
+        }
 
     }
+
+    fun dialog1(){
+        val builder = AlertDialog.Builder(this)
+        builder.setTitle("Nazwa okna")
+        builder.setMessage("Opis okna")
+
+        builder.setPositiveButton("Ok") {
+                dialog,id->Toast.makeText(this,"Kliknięto klawisz OK",Toast.LENGTH_SHORT).show()
+        }
+
+        builder.setNegativeButton("Zamknij",{dialog,id->
+            Toast.makeText(this,"Kliknięto klawisz zamknij",Toast.LENGTH_SHORT).show()
+        })
+
+        val dialog = builder.create()
+
+
+        dialog.show()
+    }
+
+
 }

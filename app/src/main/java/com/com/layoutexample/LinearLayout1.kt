@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.Toast
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_linear_layout.*
+import kotlinx.android.synthetic.main.activity_linear_layout1.*
 
 class LinearLayout1 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
