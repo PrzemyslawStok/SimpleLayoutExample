@@ -18,17 +18,16 @@ class LinearLayout : AppCompatActivity() {
             builder.setTitle("Nazwa okna")
             builder.setMessage("Opis okna")
 
-
             builder.setPositiveButton("Ok") {
                     dialog,id->Toast.makeText(this,"Kliknięto klawisz OK",Toast.LENGTH_SHORT).show()
             }
 
-            builder.setNegativeButton("Zamknij",{dialog,id->})
+            builder.setNegativeButton("Zamknij",{dialog,id->
+                Toast.makeText(this,"Kliknięto klawisz zamknij",Toast.LENGTH_SHORT).show()})
 
             val dialog = builder.create()
 
-
-            dialog.show()
+            //dialog.show()
         }
 
 
