@@ -2,10 +2,27 @@ package com.com.layoutexample
 
 import android.app.Dialog
 import android.os.Bundle
+import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.DialogFragment
 
 class CustomDialog : DialogFragment(){
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
-        return super.onCreateDialog(savedInstanceState)
+        val builder = AlertDialog.Builder(activity!!)
+        builder.setTitle("Nazwa okna")
+        builder.setMessage("Opis okna")
+
+        builder.setPositiveButton("Ok") {
+                dialog,id->
+            Toast.makeText(activity!!,"Kliknięto klawisz OK", Toast.LENGTH_SHORT).show()
+        }
+
+        builder.setNegativeButton("Zamknij",{dialog,id->
+            Toast.makeText(activity!!,"Kliknięto klawisz zamknij", Toast.LENGTH_SHORT).show()
+        })
+
+        val dialog = builder.create()
+
+        return dialog
     }
 }
