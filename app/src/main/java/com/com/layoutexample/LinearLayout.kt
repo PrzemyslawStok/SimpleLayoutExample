@@ -18,7 +18,7 @@ class LinearLayout : AppCompatActivity() {
         }
 
         openSimpleDialogButton2.setOnClickListener{
-
+            dialog2()
         }
 
     }
@@ -40,6 +40,17 @@ class LinearLayout : AppCompatActivity() {
 
 
         dialog.show()
+    }
+
+    fun dialog2(){
+        val builder = AlertDialog.Builder(this)
+        builder.setTitle("Wybierz")
+        builder.setMessage("Okno z wyborem listy")
+
+        builder.create();
+        builder.show();
+
+        //Toast.makeText(this,"Funkcja dialog2",Toast.LENGTH_SHORT).show()
     }
 
 
