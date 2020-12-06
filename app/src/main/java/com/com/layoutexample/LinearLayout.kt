@@ -52,6 +52,10 @@ class LinearLayout : AppCompatActivity() {
                 dialog,id,clicked->
             })
 
+        builder.setNegativeButton("Zamknij",{dialog,id->
+            Toast.makeText(this,"Kliknięto klawisz zamknij",Toast.LENGTH_SHORT).show()
+        })
+
         builder.create();
         builder.show();
 
