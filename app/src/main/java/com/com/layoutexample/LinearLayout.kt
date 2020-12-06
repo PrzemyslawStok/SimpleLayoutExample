@@ -51,6 +51,7 @@ class LinearLayout : AppCompatActivity() {
         val checkedArray = BooleanArray(2){false}
         val itemArray = arrayOf("Element1","Element2")
 
+
         builder.setMultiChoiceItems(itemArray,checkedArray, {
                 dialog,id,clicked->
             })
