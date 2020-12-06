@@ -14,11 +14,11 @@ class LinearLayout : AppCompatActivity() {
         setContentView(R.layout.activity_linear_layout)
 
         openSimpleDialogButton1.setOnClickListener{
-            dialog1()
+            dialog3()
         }
 
         openSimpleDialogButton2.setOnClickListener{
-            dialog3()
+            dialog2()
         }
 
     }
