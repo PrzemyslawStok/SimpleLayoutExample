@@ -13,9 +13,12 @@ class LinearLayout : AppCompatActivity() {
 
         openSimpleDialogButton.setOnClickListener{
             val builder = AlertDialog.Builder(this)
-            builder.setTitle("Przykładowe okno")
+            builder.setTitle("Nazwa okna")
+            builder.setMessage("Opis okna")
 
             val dialog = builder.create()
+
+            dialog.show()
 
             Toast.makeText(this,"Tutaj powinno się otworzyć okno",Toast.LENGTH_SHORT).show()
         }
