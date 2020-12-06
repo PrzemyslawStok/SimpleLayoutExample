@@ -50,11 +50,11 @@ class LinearLayout : AppCompatActivity() {
         //Jeżeli włączymy opis nie wyswietli się funkcja poniżej
         //builder.setMessage("Okno z wyborem listy")
 
-        val checkedArray = BooleanArray(2){ it%2!=0}
-        val itemArray = arrayOf("Element1","Element2")
+        val itemArray = IntArray(5){it*it}.map{"Element $it"}.toTypedArray()
+        val checkedArray = BooleanArray(itemArray.size){ it%2!=0}
 
-        itemArray[0] = arrayOf(1,2,3,4,5,6,7,8,9,10).toString()
-        itemArray[1] = arrayOf(1,2,3,4,5,6,7,8,9,10).asList().toString()
+        //itemArray[0] = arrayOf(1,2,3,4,5,6,7,8,9,10).toString()
+        //itemArray[1] = arrayOf(1,2,3,4,5,6,7,8,9,10).asList().toString()
 
 
         builder.setMultiChoiceItems(itemArray,checkedArray, {
