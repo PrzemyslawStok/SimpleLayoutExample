@@ -10,7 +10,6 @@ class CustomDialog : DialogFragment(){
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
         val builder = AlertDialog.Builder(activity!!)
         builder.setTitle("Nazwa okna")
-        builder.setMessage("Opis okna")
 
         builder.setPositiveButton("Ok") {
                 dialog,id->
