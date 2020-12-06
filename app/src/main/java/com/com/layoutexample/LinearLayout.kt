@@ -18,7 +18,7 @@ class LinearLayout : AppCompatActivity() {
         }
 
         openSimpleDialogButton2.setOnClickListener{
-            dialog2()
+            dialog3()
         }
 
     }
@@ -63,6 +63,10 @@ class LinearLayout : AppCompatActivity() {
         builder.show();
 
         //Toast.makeText(this,"Funkcja dialog2",Toast.LENGTH_SHORT).show()
+    }
+
+    fun dialog3(){
+
     }
 
 
