@@ -47,7 +47,10 @@ class LinearLayout : AppCompatActivity() {
         builder.setTitle("Wybierz")
         builder.setMessage("Okno z wyborem listy")
 
-
+        builder.setMultiChoiceItems(R.array.listItems,null,
+            DialogInterface.OnMultiChoiceClickListener{
+                dialog,id,clicked->
+            })
 
         builder.create();
         builder.show();
