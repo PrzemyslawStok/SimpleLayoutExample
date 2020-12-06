@@ -1,5 +1,7 @@
 package com.com.layoutexample
 
+import android.app.Dialog
+import android.content.DialogInterface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -16,11 +18,12 @@ class LinearLayout : AppCompatActivity() {
             builder.setTitle("Nazwa okna")
             builder.setMessage("Opis okna")
 
+            builder.setPositiveButton("Ok",{i,j-> })
+            builder.setNegativeButton("Zamknij",{i,j->})
+
             val dialog = builder.create()
 
             dialog.show()
-
-            Toast.makeText(this,"Tutaj powinno się otworzyć okno",Toast.LENGTH_SHORT).show()
         }
 
 
