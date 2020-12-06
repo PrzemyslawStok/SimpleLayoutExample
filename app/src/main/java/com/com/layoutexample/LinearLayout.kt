@@ -66,7 +66,9 @@ class LinearLayout : AppCompatActivity() {
     }
 
     fun dialog3(){
+        val customDialog = CustomDialog()
 
+        customDialog.show(supportFragmentManager,"customDialog1")
     }
 
 
