@@ -46,6 +46,8 @@ class LinearLayout : AppCompatActivity() {
         //Do dokończenia
         val builder = AlertDialog.Builder(this)
         builder.setTitle("Wybierz")
+
+        //Jeżeli włączymy opis nie wyswietli się funkcja poniżej
         //builder.setMessage("Okno z wyborem listy")
 
         val checkedArray = BooleanArray(2){false}
